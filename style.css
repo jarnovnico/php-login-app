@@ -1,0 +1,360 @@
+/* Fonts */
+@font-face { font-family: Galano; src: url('fonts/Galano Grotesque Alt DEMO Bold.otf'); }
+@font-face { font-family: Circular; src: url('fonts/circular/CircularStd-Book.otf'); } 
+@font-face { font-family: Circular; font-weight: bold; src: url('fonts/circular/CircularStd-Bold.otf'); }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Circular, Helvetica, sans-serif;
+}
+
+html { -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; height: 100%; }
+
+body {
+    color: #0222c3;
+    // background-color: #ece8e0;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    // background-color: #5ae1c0;
+    background-color: #0222c3;
+    padding: 20px 20px;
+    color: #fff;
+}
+
+nav {
+    height: 100%;
+    width: 800px;
+    padding: 0 44px;
+    margin: 0 auto;
+}
+
+nav ul {
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul p {
+    display: inline-block;
+    line-height: 36px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    line-height: 36px;
+}
+
+nav ul li a {
+    font-sizee: 16px;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 8px 14px;
+    font-weight: 900;
+    transition: .1s ease-in-out;
+}
+
+nav ul li a:visited {
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #0222c3;
+}
+
+nav ul form input {
+    border: none;
+    margin-right: 12px;
+    padding-left: 12px;
+}
+
+.login-form,
+.logout-form {
+    position: relative;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+}
+
+.login-form input,
+.logout-form input {
+    display: inline-block;
+}
+
+.login-form button,
+.logout-form button {
+    display: inline-block;
+    border: none;
+    height: 100%;
+    background-color: #e4825f;
+    color: #fff;
+    font-size: 14px;
+    width: 84px;
+    cursor: pointer; 
+    text-transform: uppercase;
+    font-weight: 900;
+    transition: .1s ease-in-out;
+}
+
+.logout-form button:hover,
+.login-form button:hover {
+    color: #e4825f;
+    background-color: #0222c3;
+    border: 2px solid #e4825f;
+}
+
+.website-banner {
+    position: relative;
+    width: 100%;
+}
+
+.banner-title {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -43%);
+}
+
+.banner-title span {
+    // font-family: 'Merriweather', serif;
+    font-weight: 100;
+    font-size: 24px;
+    // text-shadow: 0px 0px 10px rgba(2, 34, 195, .8);
+    color: #fff;
+}
+
+.thumbnail {
+    height: 290px;
+    overflow: hidden;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.overflow-hack {
+    width: 800px;
+    height: 40px;
+    background-color: #f4f4f4;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main {
+    padding: 0 44px 44px 44px;
+    background-color: #f4f4f4;
+    width: 800px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.page-main-title {
+    // font-family: 'Merriweather', serif;
+    // font-weight: 100;
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 44px;
+}
+
+.message-wall-wrapper {
+    width: 100%;
+    padding-bottom: 44px;
+}
+
+.signup-wrapper {
+    width: 360px;
+    margin: 0 auto;
+}
+
+.signup-wrapper p {
+    margin-top: 44px;
+}
+
+.signup-wrapper p,
+.signup-wrapper h2 {
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // height: 250px;
+    height: 100%;
+}
+
+.message-box-wrapper {
+    margin-bottom: 44px;
+}
+
+.comment-box input{
+    width: 100%;
+    margin-bottom: 14px;
+}
+
+.signup-form input,
+.comment-box-title {
+    height: 36px;
+    padding-left: 12px;
+    // border: 1px solid #ccc5b6;
+    border: none;
+}
+
+.signup-form input {
+    margin-bottom: 14px;
+}
+
+.signup-form input:last-of-type {
+    margin-bottom: 44px;
+}
+
+.comment-box-text {
+    padding: 12px;
+    width: 100%;
+    height: 80px;
+    resize: none;
+    margin-bottom: 14px;
+    // border: 1px solid #ccc5b6;
+    border: none;
+}
+
+.signup-form button {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.signup-form button,
+.comment-box button {
+    // padding: 10px 12px;
+    padding: 8px 14px;
+    border: none;
+    font-size: 14px;
+    // background-color: #e57676;
+    background-color: #e4825f;
+    border: 2px solid #e4825f;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    transition: .1s ease-in-out;
+}
+
+.signup-form button:hover,
+.comment-box button:hover {
+    cursor: pointer;
+    color: #e4825f;
+    // background-color: #ece8e0;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid #e4825f;
+}
+
+.pls-login-message {
+    margin-bottom: 44px;
+}
+
+.post-it-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.message-wrapper {
+    width: 47%;
+    padding: 20px;
+    margin-bottom: 44px;
+    // background-color: #fff;
+    background-color: #feeeac;
+    position: relative;
+    // box-shadow: 0px 7px 22px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 12px -5px rgba(0,0,0,0.75);
+}
+
+.message-wrapper h3 {
+    // font-family: 'Permanent Marker', cursive;
+    color: #000;
+    // font-size: 28px;
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+.message-wrapper h4 {
+    font-family: 'Permanent Marker', cursive;
+    color: #000;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.message-wrapper p {
+    font-size: 20px;
+    line-height: 26px;
+    color: #282828;
+    font-weight: 100;
+    font-family: 'Permanent Marker', cursive;
+    // font-family: 'Schoolbell', cursive;
+    // font-family: 'Delius', cursive;
+}
+
+.edit-form {
+    position: absolute;
+    // top: 8px;
+    // right: 6px;
+    top: 20px;
+    right: 20px;
+    font-size: 14px;
+}
+
+.edit-form button {
+    // width: 40px;
+    // height: 20px;
+    color: #282828;
+    // background-color: #fff;
+    background-color: rgba(0,0,0,0);
+    opacity: 0.6;
+    border: none;
+    transition: .1s ease-in-out;
+}
+
+.edit-form button:hover {
+    opacity: 1; 
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.delete-form {
+    position: absolute;
+    // top: 8px;
+    right: 60px;
+    top: 20px;
+    font-size: 14px;
+}
+
+.delete-form button {
+    width: 40px;
+    // height: 20px;
+    color: #282828;
+    // background-color: #fff;
+    background-color: rgba(0,0,0,0);
+    opacity: 0.7;
+    border: none;
+    transition: .1s ease-in-out;
+}
+
+.delete-form button:hover {
+    opacity: 1; 
+    cursor: pointer;
+    text-decoration: underline;
+}
